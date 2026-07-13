@@ -12,14 +12,14 @@ const pageTitle = "Meet the team";
 <Base pageTitle={pageTitle} heading={pageTitle}>
     {
       bios.map((bio) => (
-        <div class="flex items-center p-4 m-4 bg-gray-200 rounded-2xl">
+        <div class="md:flex items-center p-4 m-4 bg-gray-200 rounded-2xl">
             <Image
               src={bio.data.photo}
               alt={`Bio picture for ${bio.data.firstname}`}
-              class="h-48 mr-4 w-auto rounded-xl"
+              class="ml-auto justify-center h-48 md:mr-4 w-auto rounded-xl"
             />
             <div>
-            <h2 class="mb-2 text-xl">
+            <h2 class="mt-2 md:mt-0 mb-2 text-xl">
               {bio.data.firstname} {bio.data.lastname}
             </h2>
           <p>{bio.body}</p>
