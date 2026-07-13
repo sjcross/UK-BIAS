@@ -1,5 +1,42 @@
 ---
-import BaseLayout from "../layouts/BaseLayout.astro";
+import Base from "../layouts/Base.astro";
+import { Image } from "astro:assets";
+import UkBiasLogo from "../assets/UK-BIAS_red-blue.png";
+
 const pageTitle = "UK-BIAS";
+const subHead = "The UK Network of BioImage Analysts";
 ---
-<BaseLayout pageTitle={pageTitle} />
+
+<Base pageTitle={pageTitle} heading={pageTitle} subHead={subHead}>
+  <div class="flex mt-8 items-start text-right text-lg">
+    <Image src={UkBiasLogo} alt="UK-BIAS logo" class="mr-12 h-64 w-auto" />
+
+    <div class="flex-col">
+      <p class="mb-8">
+        Expert image analysis has become a critical bottleneck in life science
+        research - one that only deepens as imaging technologies continue to
+        advance. As the first dedicated bioimage analysis service within the UK
+        Node of Euro-BioImaging, UK-BIAS brings together leading specialists
+        from ten UK institutions to address this challenge, complementing
+        instrument access with image data analysis capabilities.
+      </p>
+
+      <p class="mb-12">
+        The network offers services covering the full experimental life cycle,
+        from initial consultations to bespoke pipeline development, with
+        resources equivalent to two full-time analysts. Our team has an
+        excellent track record in research collaboration, with outputs published
+        in top tier journals, as well as extensive experience in designing and
+        delivering training programmes. We are strong advocates of the FAIR
+        principles and, as such, all our outputs are released as open-source,
+        while researchers retain full ownership of their raw data.
+      </p>
+    </div>
+  </div>
+
+  <a
+    href="https://uk-bias.github.io/UK-BIAS/presentations/intro/index.html"
+    class="p-4 text-white rounded-2xl bg-[#ABB1C4] hover:bg-[#E8C3C9]"
+    >Click here for an introductory presentation</a
+  >
+</Base>

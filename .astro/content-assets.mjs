@@ -1,0 +1,9 @@
+
+import __ASTRO_IMAGE_IMPORT_1d3hdS from "../../assets/portrait_placeholder.png?astroContentImageFlag=&importer=src%2Fcontent%2Fbios%2FBio1.md";
+import __ASTRO_IMAGE_IMPORT_1d3peg from "../../assets/portrait_placeholder.png?astroContentImageFlag=&importer=src%2Fcontent%2Fbios%2FBio2.md";
+import __ASTRO_IMAGE_IMPORT_1d3xeD from "../../assets/portrait_placeholder.png?astroContentImageFlag=&importer=src%2Fcontent%2Fbios%2FBio3.md";
+import __ASTRO_IMAGE_IMPORT_1d3Ff1 from "../../assets/portrait_placeholder.png?astroContentImageFlag=&importer=src%2Fcontent%2Fbios%2FBio4.md";
+import __ASTRO_IMAGE_IMPORT_1d3Nfo from "../../assets/portrait_placeholder.png?astroContentImageFlag=&importer=src%2Fcontent%2Fbios%2FBio5.md";
+import __ASTRO_IMAGE_IMPORT_1d3VfL from "../../assets/portrait_placeholder.png?astroContentImageFlag=&importer=src%2Fcontent%2Fbios%2FBio6.md";
+export default new Map([["../../assets/portrait_placeholder.png?astroContentImageFlag=&importer=src%2Fcontent%2Fbios%2FBio1.md", __ASTRO_IMAGE_IMPORT_1d3hdS], ["../../assets/portrait_placeholder.png?astroContentImageFlag=&importer=src%2Fcontent%2Fbios%2FBio2.md", __ASTRO_IMAGE_IMPORT_1d3peg], ["../../assets/portrait_placeholder.png?astroContentImageFlag=&importer=src%2Fcontent%2Fbios%2FBio3.md", __ASTRO_IMAGE_IMPORT_1d3xeD], ["../../assets/portrait_placeholder.png?astroContentImageFlag=&importer=src%2Fcontent%2Fbios%2FBio4.md", __ASTRO_IMAGE_IMPORT_1d3Ff1], ["../../assets/portrait_placeholder.png?astroContentImageFlag=&importer=src%2Fcontent%2Fbios%2FBio5.md", __ASTRO_IMAGE_IMPORT_1d3Nfo], ["../../assets/portrait_placeholder.png?astroContentImageFlag=&importer=src%2Fcontent%2Fbios%2FBio6.md", __ASTRO_IMAGE_IMPORT_1d3VfL]]);
+		

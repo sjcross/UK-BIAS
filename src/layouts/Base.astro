@@ -3,7 +3,7 @@ import Header from "../components/Header.astro";
 import Sidebar from "../components/Sidebar.astro";
 import Footer from "../components/Footer.astro";
 import "../styles/global.css";
-const { pageTitle, subHead } = Astro.props;
+const { pageTitle, heading, subHead } = Astro.props;
 ---
 
 <html lang="en">
@@ -12,13 +12,14 @@ const { pageTitle, subHead } = Astro.props;
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>{pageTitle}</title>
+    <title>pageTitle</title>
   </head>
   <body class="bg-gray-100">
     <Header />
     <Sidebar />
-    <div class="main-content mt-6 min-h-screen text-center">
-      <h1 class="text-4xl text-gray-500">{pageTitle}</h1>
+    <div class="main-content mt-6 ml-6 mr-6 min-h-screen text-right">
+      <h1 class="text-4xl text-[#465786]">{heading}</h1>
+      <h2 class="text-3xl text-[#BE3E49] mb-4">{subHead}</h2>
       <slot />
       <Footer />
     </div>
