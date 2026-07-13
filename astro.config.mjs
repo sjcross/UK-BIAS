@@ -8,6 +8,8 @@ import tailwindcss from '@tailwindcss/vite';
 // https://astro.build/config
 export default defineConfig({
   integrations: [solidJs()],
+  site: 'https://sjcross.github.io',
+  base: '/UK-BIAS',
 
   vite: {
     plugins: [tailwindcss()]
