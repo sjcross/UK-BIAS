@@ -1,0 +1,11 @@
+---
+import { Image } from "astro:assets";
+import MenuButton from "./MenuButton.astro";
+import UkBiasLogo from "../assets/UK-BIAS_red-blue.png";
+---
+
+<header class="sticky bg-gray-100 top-0 padding-0 flex items-center h-18">
+  <MenuButton />
+  <Image src={UkBiasLogo} alt="UK-BIAS logo" class="mr-6 h-8 w-auto" />
+  <a href="/" class="text-4xl">UK-BIAS</a>
+</header>

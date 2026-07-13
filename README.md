@@ -1,11 +1,43 @@
-# The UK Network of BioImage Analysts
+# Astro Starter Kit: Minimal
 
-<center><img src="assets/logos/UK-BIAS_red-blue.png" width="20%"></center>
+```sh
+npm create astro@latest -- --template minimal
+```
 
-## Virtual bioimage analysis service \- open to all
+> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
-Expert image analysis has become a critical bottleneck in life science research \- one that only deepens as imaging technologies continue to advance. As the first dedicated bioimage analysis service within the UK Node of Euro-BioImaging, UK-BIAS brings together leading specialists from ten UK institutions to address this challenge, complementing instrument access with image data analysis capabilities.
+## 🚀 Project Structure
 
-The network offers services covering the full experimental life cycle, from initial consultations to bespoke pipeline development, with resources equivalent to two full-time analysts. Our team has an excellent track record in research collaboration, with outputs published in top tier journals, as well as extensive experience in designing and delivering training programmes. We are strong advocates of the FAIR principles and, as such, all our outputs are released as open-source, while researchers retain full ownership of their raw data.
+Inside of your Astro project, you'll see the following folders and files:
 
-View an introductory presentation [here](presentations/intro/index.html).1
+```text
+/
+├── public/
+├── src/
+│   └── pages/
+│       └── index.astro
+└── package.json
+```
+
+Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+
+There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+
+Any static assets, like images, can be placed in the `public/` directory.
+
+## 🧞 Commands
+
+All commands are run from the root of the project, from a terminal:
+
+| Command                   | Action                                           |
+| :------------------------ | :----------------------------------------------- |
+| `npm install`             | Installs dependencies                            |
+| `npm run dev`             | Starts local dev server at `localhost:4321`      |
+| `npm run build`           | Build your production site to `./dist/`          |
+| `npm run preview`         | Preview your build locally, before deploying     |
+| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
+| `npm run astro -- --help` | Get help using the Astro CLI                     |
+
+## 👀 Want to learn more?
+
+Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
