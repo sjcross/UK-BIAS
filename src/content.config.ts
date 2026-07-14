@@ -7,6 +7,7 @@ const bios = defineCollection({
   schema: ({image}) => z.object({
     firstname: z.string(),
     lastname: z.string(),
+    affiliation: z.string(),
     photo: image()
   }),
 });
