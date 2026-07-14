@@ -6,8 +6,8 @@ import BlueskyLogo from "../assets/logos/Bluesky_logo.svg";
 import GitHubLogo from "../assets/logos/GitHub_logo.svg";
 ---
 
-<div class="fixed overflow-hidden position-absolute">
-  <nav class="sidebar mt-6 p-2 h-[calc(100vh-2.5rem)] w-64 bg-gray-100">
+<div class="fixed overflow-hidden absolute">
+  <nav class="sidebar ml-3 mt-6 p-2 h-[calc(100vh-6rem)] w-58 bg-gray-100">
     <ul class="mb-0">
       <NavLink link="/" text="About" colour="#465786" />
       <NavLink link="/the-team/" text="The team" colour="#ABB1C4" />
@@ -18,8 +18,8 @@ import GitHubLogo from "../assets/logos/GitHub_logo.svg";
         colour="#BE3E49"
       />
     </ul>
-    <p class="mt-10 mb-2 -ml-10 text-[#465786]">You can also find us at</p>
-    <ul>
+    <ul class="absolute bottom-0 mb-6">
+      <!-- <p class="mt-10 mb-2 -ml-10 text-[#465786]">You can also find us at</p> -->
       <ExtLink
         link="https://bsky.app/profile/uk-bias.bsky.social"
         text="Bluesky"

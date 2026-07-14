@@ -3,7 +3,7 @@
 body {
   margin: 0 auto;
   width: 100%;
-  max-width: 80ch;
+  max-width: 100ch;
   line-height: 1.5;
 }
 
@@ -12,9 +12,24 @@ body {
   overscroll-behavior-y: none;
 }
 
+@media (max-width: 48rem) {
+  .sidebar {
+    transform: translateX(-100%);
+    transition: transform 300ms ease;
+  }
+
+  :has(.menu[aria-expanded="true"]) .sidebar {
+    transform: translateX(0);
+  }
+}
+
+@media (min-width: 48rem) {
+  .menu {
+    display: none;
+  }
+}
+
 .sidebar {
-  transform: translateX(-100%);
-  transition: transform 300ms ease;
   padding-left: 3rem;
 }
 
@@ -52,8 +67,4 @@ body {
 /* Don't draw the line after the last item */
 .sidebar li:last-child::after {
   display: none;
-}
-
-:has(.menu[aria-expanded="true"]) .sidebar {
-  transform: translateX(0);
 }
