@@ -13,17 +13,10 @@ const heading = "Submit a project";
       for general enquiries please contact [TBC].
     </p>
     <form action="https://formspree.io/f/mdaqabgd" method="POST">
-      <FormItem variableName="fullname" displayText="Your name:" />
-      <FormItem variableName="email" displayText="Your email address:" />
-      <label for="project-description" class="text-[#465786] mb-4"
-        >Project description:</label
-      >
-      <textarea
-        id="project-description"
-        name="project-description"
-        class="rounded-xl bg-white outline-solid outline-gray-400 hover:outline-[#BE3E49] focus-within:outline-[#BE3E49] outline-2 w-full p-2 mt-2 mb-6 transition"
-        rows="12"></textarea>
-
+      <FormItem type="input" variableName="fullname" displayText="Your name:" />
+      <FormItem type="input" variableName="email" displayText="Your email:" />
+      <FormItem type="textarea" variableName="email" displayText="Project description:" />
+      
       <div class="flex align-center">
         <button
           type="submit"
