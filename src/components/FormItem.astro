@@ -1,0 +1,5 @@
+---
+const {variableName, displayText, defaultText, inputHeight} = Astro.props;
+---
+<label for={variableName} class="text-[#465786] mb-4">{displayText}</label>
+<input type="text" id={variableName} name={variableName} class="rounded-xl bg-white outline-solid outline-gray-400 hover:outline-[#BE3E49] focus-within:outline-[#BE3E49] outline-2 w-full p-2 mt-2 mb-6 transition" value={defaultText}/>
