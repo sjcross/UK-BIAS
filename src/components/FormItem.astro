@@ -1,17 +1,17 @@
 ---
-const {type, variableName, displayText, defaultText, inputHeight} = Astro.props;
+const {type, variableName, variableID, displayText, defaultText, rows} = Astro.props;
 ---
-<label for={variableName} class="text-[#465786] mb-4">{displayText}</label>
+<label for={variableID} class="text-[#465786] mb-4">{displayText}</label>
 
 {type === "input" && (
-  <input type="text" id={variableName} name={variableName} class="rounded-xl bg-white outline-solid outline-gray-400 hover:outline-[#BE3E49] focus-within:outline-[#BE3E49] outline-2 w-full p-2 mt-2 mb-6 transition" value={defaultText}/>
+  <input type="text" id={variableID} name={variableName} class="rounded-lg bg-white outline-solid outline-gray-400 hover:outline-[#BE3E49] focus-within:outline-[#BE3E49] outline-2 w-full p-2 mt-2 mb-6 transition" value={defaultText}/>
 )}
 
 {type === "textarea" && (
    <textarea
-        id={variableName}
+        id={variableID}
         name={variableName}
-        class="rounded-xl bg-white outline-solid outline-gray-400 hover:outline-[#BE3E49] focus-within:outline-[#BE3E49] outline-2 w-full p-2 mt-2 mb-6 transition"
+        class="rounded-lg bg-white outline-solid outline-gray-400 hover:outline-[#BE3E49] focus-within:outline-[#BE3E49] outline-2 w-full p-2 mt-2 mb-6 transition"
         value={defaultText}
-        rows="4"></textarea>
+        rows={rows}></textarea>
 )}
