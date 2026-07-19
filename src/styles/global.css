@@ -16,10 +16,12 @@ body {
   .sidebar {
     transform: translateX(-100%);
     transition: transform 300ms ease;
+    pointer-events: none;
   }
 
   :has(.menu[aria-expanded="true"]) .sidebar {
     transform: translateX(0);
+    pointer-events: auto;
   }
 }
 
