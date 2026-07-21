@@ -6,31 +6,27 @@ import BlueskyLogo from "../assets/logos/Bluesky_logo.svg";
 import GitHubLogo from "../assets/logos/GitHub_logo.svg";
 ---
 
-<!-- <div class="fixed overflow-hidden absolute"> -->
-  <nav class="sidebar fixed overflow-hidden absolute ml-3 pt-6 p-2 h-[calc(100vh-4.5rem)] w-58 bg-gray-100 z-100">
-    <ul class="mb-0">
-      <NavLink link="/" text="About" colour="#465786" />
-      <NavLink link="/the-team/" text="The team" colour="#ABB1C4" />
-      <NavLink link="/funding/" text="Funding" colour="#FFFFFF" />
-      <NavLink
-        link="/submit-project/"
-        text="Submit a project"
-        colour="#E8C3C9"
-      />
-      <NavLink link="/contact-us/" text="Contact us" colour="#BE3E49" />
-    </ul>
-    <ul class="absolute bottom-0 mb-16">
-      <!-- <p class="mt-10 mb-2 -ml-10 text-[#465786]">You can also find us at</p> -->
-      <ExtLink
-        link="https://bsky.app/profile/uk-bias.bsky.social"
-        text="Bluesky"
-        logo={BlueskyLogo}
-      />
-      <ExtLink
-        link="https://github.com/UK-BIAS"
-        text="GitHub"
-        logo={GitHubLogo}
-      />
-    </ul>
-  </nav>
-<!-- </div> -->
+<nav
+  class="sidebar fixed overflow-hidden absolute ml-3 pt-6 p-2 h-[calc(100vh-4.5rem)] w-58 bg-gray-100 z-100"
+>
+  <ul class="mb-0">
+    <NavLink link="/" text="About" colour="#465786" />
+    <NavLink link="/the-team/" text="The team" colour="#ABB1C4" />
+    <NavLink link="/funding/" text="Funding" colour="#FFFFFF" />
+    <NavLink link="/submit-project/" text="Submit a project" colour="#E8C3C9" />
+    <NavLink link="/contact-us/" text="Contact us" colour="#BE3E49" />
+  </ul>
+
+  <ul class="absolute bottom-0 mb-16">
+    <ExtLink
+      link="https://bsky.app/profile/uk-bias.bsky.social"
+      text="Bluesky"
+      logo={BlueskyLogo}
+    />
+    <ExtLink
+      link="https://github.com/UK-BIAS"
+      text="GitHub"
+      logo={GitHubLogo}
+    />
+  </ul>
+</nav>
