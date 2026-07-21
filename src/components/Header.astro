@@ -4,6 +4,7 @@ import MenuButton from "./MenuButton.astro";
 import UkBiasLogo from "../assets/logos/UK-BIAS_logo.svg";
 import UkBiasLogoText from "../assets/logos/UK-BIAS_logotext.svg";
 import UkBiasLogoTextHover from "../assets/logos/UK-BIAS_logotext_hover.svg";
+import EbiLogo from "../assets/logos/EBI_logo.svg";
 ---
 
 <header class="sticky bg-gray-100 top-0 padding-0 flex items-center h-18">
@@ -15,7 +16,11 @@ import UkBiasLogoTextHover from "../assets/logos/UK-BIAS_logotext_hover.svg";
     ><Image
       src={UkBiasLogoText}
       alt="UK-BIAS logo text"
-      class="h-7 w-auto fill-red-200"
+      class="h-7 w-auto"
     /></a
+  >
+  <a href="https://www.eurobioimaging.eu/" class="ml-auto mr-2">
+    <Image src={EbiLogo} alt="EuroBioImaging logo" class="h-12 w-auto"/>
+    </a
   >
 </header>

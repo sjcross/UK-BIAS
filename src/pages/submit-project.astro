@@ -27,13 +27,28 @@ const heading = "Submit a project";
         displayText="Your name:"
       />
       <FormItem type="input" variableID="q-email" displayText="Your email:" />
+      <FormItem type="input" variableID="q-institution" displayText="Your institution:" />
 
       <h2 class="text-2xl text-[#465786] mt-10 mb-4">Project details</h2>
       <FormItem
         type="textarea"
+        variableID="q-general-background"
+        displayText="General background:"
+        defaultText="Please provide a brief explanation of the biological question you are attempting to answer (max 100 words). Please include some information on the nature of your samples and the system used for image acquisition."
+        rows="6"
+      />
+      <FormItem
+        type="textarea"
         variableID="q-wish-to-quantify"
         displayText="What exactly do you wish to quantify?"
-        defaultText="Please list the key measurements you wish to extract from your images."
+        defaultText="Please list the key measurements you wish to extract from your images.  For example, cell area in control and treated samples."
+        rows="5"
+      />
+      <FormItem
+        type="textarea"
+        variableID="q-shortcomings"
+        displayText="Are there any known shortcomings?"
+        defaultText="For example, photobleaching, mechanical drift or bleedthrough between channels."
         rows="5"
       />
       <FormItem
@@ -47,20 +62,6 @@ const heading = "Submit a project";
         variableID="q-image-count-2"
         displayText="Going forward, how many images do you anticipate having?"
         rows="1"
-      />
-      <FormItem
-        type="textarea"
-        variableID="q-shortcomings"
-        displayText="Are there any known shortcomings?"
-        defaultText="For example, photobleaching, mechanical drift or bleedthrough between channels."
-        rows="5"
-      />
-      <FormItem
-        type="textarea"
-        variableID="q-general-background"
-        displayText="General background:"
-        defaultText="Please provide a brief explanation of the biological question you are attempting to answer (max 100 words). Please include some information on the nature of your samples and the system used for image acquisition."
-        rows="6"
       />
 
       <div class="flex align-center">
