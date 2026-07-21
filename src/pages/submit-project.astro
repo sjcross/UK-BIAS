@@ -13,7 +13,10 @@ const heading = "Submit a project";
     </p>
 
     <p class="mb-8">
-      For general enquiries, please click <a href={`${import.meta.env.BASE_URL}/contact-us`} class="text-blue-500">here</a>.
+      For general enquiries, please click <a
+        href={`${import.meta.env.BASE_URL}/contact-us`}
+        class="text-blue-500">here</a
+      >.
     </p>
 
     <h2 class="text-2xl text-[#465786] mt-10 mb-4">Contact details</h2>
@@ -21,44 +24,43 @@ const heading = "Submit a project";
       <FormItem
         type="input"
         variableID="q-full-name"
-        variableName="Your name:"
         displayText="Your name:"
       />
-      <FormItem
-        type="input"
-        variableID="q-email"
-        variableName="Your email:"
-        displayText="Your email:"
-      />
+      <FormItem type="input" variableID="q-email" displayText="Your email:" />
 
       <h2 class="text-2xl text-[#465786] mt-10 mb-4">Project details</h2>
       <FormItem
         type="textarea"
         variableID="q-wish-to-quantify"
-        variableName="What exactly do you wish to quantify?"
         displayText="What exactly do you wish to quantify?"
-        rows="6"
+        defaultText="Please list the key measurements you wish to extract from your images"
+        rows="5"
       />
       <FormItem
         type="textarea"
         variableID="q-image-count-1"
-        variableName="Do you currently have any images? If so, how many?"
         displayText="Do you currently have any images? If so, how many?"
         rows="1"
       />
       <FormItem
         type="textarea"
         variableID="q-image-count-2"
-        variableName="Going forward, how many images do you anticipate having?"
         displayText="Going forward, how many images do you anticipate having?"
         rows="1"
       />
       <FormItem
         type="textarea"
         variableID="q-shortcomings"
-        variableName="Are there any known shortcomings?"
         displayText="Are there any known shortcomings?"
-        rows="3"
+        defaultText="For example, photobleaching, mechanical drift or bleedthrough between channels"
+        rows="5"
+      />
+      <FormItem
+        type="textarea"
+        variableID="q-general-background"
+        displayText="General background:"
+        defaultText="Please provide a brief explanation of the biological question you are attempting to answer (max 100 words). Please include some information on the nature of your samples and the system used for image acquisition."
+        rows="6"
       />
 
       <div class="flex align-center">
